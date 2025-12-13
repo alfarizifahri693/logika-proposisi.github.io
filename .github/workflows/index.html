@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposisi Logika - Panduan Lengkap</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <div class="container">
+        <div class="header-content">
+            <div class="logo-and-menu">
+                <div class="logo">
+                    <i class="fas fa-brain"></i>
+                    <h1>Proposisi <span>Logika</span></h1>
+                </div>
+                <button class="hamburger-menu" aria-label="Menu navigasi">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#pendahuluan"><i class="fas fa-home"></i> Pendahuluan</a></li>
+                    <li><a href="#materi"><i class="fas fa-book"></i> Materi</a></li>
+                    <li><a href="#connectives"><i class="fas fa-project-diagram"></i> Penghubung Logika</a></li>
+                    <li><a href="#latihan"><i class="fas fa-pencil-alt"></i> Latihan</a></li>
+                    <li><a href="#referensi"><i class="fas fa-list"></i> Referensi</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Memahami Proposisi Logika</h2>
+                <p>Pelajari fondasi logika matematika yang menjadi dasar ilmu komputer, pemrograman, dan kecerdasan buatan melalui panduan interaktif ini.</p>
+                <a href="#pendahuluan" class="cta-button">Mulai Belajar <i class="fas fa-arrow-down"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <section id="pendahuluan" class="content-section">
+            <h2 class="section-title">Pendahuluan</h2>
+            <p>Proposisi Logika merupakan fondasi dasar dalam logika matematika dan ilmu komputer yang memungkinkan representasi pernyataan bernilai benar (True/T) atau salah (False/F). Materi ini menjadi pilar penting dalam pengembangan algoritma, sistem kecerdasan buatan, dan verifikasi perangkat lunak.</p>
+            
+            <h3><i class="fas fa-info-circle"></i> Apa itu Proposisi?</h3>
+            <p>Proposisi adalah pernyataan deklaratif yang memiliki nilai kebenaran yang pasti, yaitu <strong>benar</strong> atau <strong>salah</strong>, tetapi tidak keduanya sekaligus.</p>
+            
+            <div class="truth-table-container">
+                <h3><i class="fas fa-table"></i> Contoh Proposisi</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Proposisi</th>
+                            <th>Nilai Kebenaran</th>
+                            <th>Keterangan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>"Jakarta adalah ibu kota Indonesia"</td>
+                            <td><span class="symbol">T (True)</span></td>
+                            <td>Pernyataan faktual yang benar</td>
+                        </tr>
+                        <tr>
+                            <td>"2 + 2 = 5"</td>
+                            <td><span class="symbol">F (False)</span></td>
+                            <td>Pernyataan matematika yang salah</td>
+                        </tr>
+                        <tr>
+                            <td>"Hari ini hujan"</td>
+                            <td>T atau F</td>
+                            <td>Bergantung kondisi aktual</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="materi" class="content-section">
+            <h2 class="section-title">Materi Inti</h2>
+            <p>Logika proposisional mempelajari cara membentuk proposisi kompleks dari proposisi sederhana menggunakan penghubung logika (logical connectives). Setiap penghubung memiliki tabel kebenaran yang menentukan nilai kebenaran proposisi gabungan berdasarkan nilai proposisi penyusunnya.</p>
+            
+            <h3><i class="fas fa-sitemap"></i> Struktur Pembelajaran</h3>
+            <p>1. Memahami definisi proposisi dan nilai kebenaran<br>
+            2. Mengenal 6 penghubung logika dasar<br>
+            3. Membaca dan membuat tabel kebenaran<br>
+            4. Menganalisis argumen logis<br>
+            5. Menerapkan dalam pemrograman</p>
+        </section>
+
+        <section id="connectives" class="content-section">
+            <h2 class="section-title">Penghubung Logika (Logical Connectives)</h2>
+            <p>Penghubung logika digunakan untuk membentuk proposisi baru dari satu atau lebih proposisi yang sudah ada.</p>
+            
+            <div class="connective-cards">
+                <div class="card">
+                    <h4><i class="fas fa-not-equal"></i> Negasi (NOT)</h4>
+                    <p><strong>Simbol:</strong> <span class="symbol">¬</span> atau <span class="symbol">~</span></p>
+                    <p><strong>Arti:</strong> Kebalikan dari proposisi asli</p>
+                    <p>Jika p benar, maka ¬p salah. Jika p salah, maka ¬p benar.</p>
+                </div>
+                
+                <div class="card">
+                    <h4><i class="fas fa-android"></i> Konjungsi (AND)</h4>
+                    <p><strong>Simbol:</strong> <span class="symbol">∧</span> atau <span class="symbol">&</span></p>
+                    <p><strong>Arti:</strong> p AND q benar hanya jika keduanya benar</p>
+                    <p>p ∧ q = T hanya jika p = T dan q = T</p>
+                </div>
+                
+                <div class="card">
+                    <h4><i class="fas fa-orcid"></i> Disjungsi (OR)</h4>
+                    <p><strong>Simbol:</strong> <span class="symbol">∨</span> atau <span class="symbol">|</span></p>
+                    <p><strong>Arti:</strong> p OR q benar jika setidaknya satu benar</p>
+                    <p>p ∨ q = F hanya jika p = F dan q = F</p>
+                </div>
+                
+                <div class="card">
+                    <h4><i class="fas fa-arrow-right"></i> Implikasi (IF-THEN)</h4>
+                    <p><strong>Simbol:</strong> <span class="symbol">→</span> atau <span class="symbol">⇒</span></p>
+                    <p><strong>Arti:</strong> Jika p maka q</p>
+                    <p>p → q = F hanya jika p = T dan q = F</p>
+                </div>
+                
+                <div class="card">
+                    <h4><i class="fas fa-arrows-alt-h"></i> Biimplikasi (IFF)</h4>
+                    <p><strong>Simbol:</strong> <span class="symbol">↔</span> atau <span class="symbol">⇔</span></p>
+                    <p><strong>Arti:</strong> p jika dan hanya jika q</p>
+                    <p>p ↔ q = T jika p dan q memiliki nilai yang sama</p>
+                </div>
+            </div>
+
+            <div class="truth-table-container">
+                <h3><i class="fas fa-th-large"></i> Tabel Kebenaran Lengkap</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>p</th>
+                            <th>q</th>
+                            <th>¬p</th>
+                            <th>p ∧ q</th>
+                            <th>p ∨ q</th>
+                            <th>p → q</th>
+                            <th>p ↔ q</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>T</td><td>T</td><td>F</td><td>T</td><td>T</td><td>T</td><td>T</td>
+                        </tr>
+                        <tr>
+                            <td>T</td><td>F</td><td>F</td><td>F</td><td>T</td><td>F</td><td>F</td>
+                        </tr>
+                        <tr>
+                            <td>F</td><td>T</td><td>T</td><td>F</td><td>T</td><td>T</td><td>F</td>
+                        </tr>
+                        <tr>
+                            <td>F</td><td>F</td><td>T</td><td>F</td><td>F</td><td>T</td><td>T</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="latihan" class="content-section">
+            <h2 class="section-title">Latihan & Aplikasi</h2>
+            
+            <div class="exercise">
+                <h4><i class="fas fa-tasks"></i> Latihan 1: Membaca Tabel Kebenaran</h4>
+                <p>Diberikan proposisi: <strong>(p ∧ q) → ¬r</strong></p>
+                <p>Jika p = T, q = F, r = T, maka nilai proposisi tersebut adalah?</p>
+                <button onclick="showAnswer(1)" class="cta-button" style="padding: 8px 20px; font-size: 1rem;">Lihat Jawaban</button>
+                <p id="answer1" class="answer-box">
+                    <strong>Jawaban:</strong> p ∧ q = T ∧ F = F, kemudian F → ¬r = F → F = T. Jadi hasilnya adalah <strong>T (True)</strong>.
+                </p>
+            </div>
+            
+            <div class="exercise" style="margin-top: 20px;">
+                <h4><i class="fas fa-laptop-code"></i> Aplikasi dalam Pemrograman</h4>
+                <p>Dalam bahasa pemrograman, penghubung logika digunakan dalam struktur kontrol:</p>
+                <div class="code-example">
+                    if (user.isAuthenticated() && (balance > 0)) {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;processTransaction();<br>
+                    }
+                </div>
+                <p>Kode di atas menggunakan konjungsi (AND) yang hanya akan mengeksekusi transaksi jika kedua kondisi terpenuhi.</p>
+            </div>
+        </section>
+
+        <section id="referensi" class="content-section">
+            <h2 class="section-title">Referensi</h2>
+            <ul class="reference-list">
+                <li>
+                    <i class="fas fa-book"></i>
+                    Rosen, K. H. (2019). <em>Discrete Mathematics and Its Applications</em> (8th ed.). McGraw-Hill Education.
+                </li>
+                <li>
+                    <i class="fas fa-book"></i>
+                    Ben-Ari, M. (2012). <em>Mathematical Logic for Computer Science</em> (3rd ed.). Springer-Verlag London.
+                </li>
+                <li>
+                    <i class="fas fa-book"></i>
+                    Suryana, A. (2020). <em>Logika Matematika untuk Informatika: Teori dan Aplikasi</em>. Penerbit Informatika Bandung.
+                </li>
+                <li>
+                    <i class="fas fa-file-pdf"></i>
+                    <em>Proposition Logic.pdf</em>, Modul Ajar, Universitas Teknokrat Indonesia.
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Proposisi Logika</h4>
+                    <p>Situs pembelajaran interaktif tentang dasar-dasar proposisi logika untuk mahasiswa informatika dan pemrograman.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Navigasi Cepat</h4>
+                    <ul class="footer-links">
+                        <li><a href="#pendahuluan">Pendahuluan</a></li>
+                        <li><a href="#materi">Materi Inti</a></li>
+                        <li><a href="#connectives">Penghubung Logika</a></li>
+                        <li><a href="#latihan">Latihan</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Kontak</h4>
+                    <p><i class="fas fa-phone"></i> 0721 - 702022 (Hunting)</p>
+                    <p><i class="fas fa-university"></i> Universitas Teknokrat Indonesia</p>
+                </div>
+            </div>
+            
+           
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
